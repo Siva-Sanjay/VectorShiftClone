@@ -1,0 +1,202 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* background: linear-gradient(20deg, rgb(0, 0, 0) -10.7%, rgb(53, 92, 125) 88.8%); */
+  background: linear-gradient(178.1deg, rgb(34, 31, 65) 8.5%, rgb(23, 20, 69) 82.4%);
+  /* background-color: rgb(17, 13, 43); */
+
+  
+}
+.root{
+  height: 100vh;
+}
+
+/* .react-flow__pane {
+   background: linear-gradient(178.1deg, rgb(34, 31, 65) 8.5%, rgb(23, 20, 69) 82.4%); 
+  
+} */
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+    
+    
+}
+
+
+
+/******** Node styling ************************/
+
+.node {
+  width: 250px;
+  /* box-sizing: content-box; */
+  height: max-content;
+  border: 4px solid rgb(20, 251, 255);
+  align-items: center;
+  padding: 8%;
+  box-shadow: 0 0 15px #9ecaed;
+  border-radius: 30px;
+  backdrop-filter: blur(2px);
+}
+.node:active , .node:focus{
+  box-shadow: 1px 1.5px 10px;
+  opacity: 92%;
+}
+
+.react-flow__handle-right{
+  scale: 1.5;
+  background-color: #010a0afd !important;
+  border-color: rgb(80, 255, 232) !important;
+  border-width: 1px !important;
+  box-shadow: 1px 1px 5px #ffffff;
+  /* border-radius: 0 !important; */
+
+}
+.react-flow__handle-left{
+  scale: 2;
+  background-color: rgba(255, 255, 255, 0.829) !important; 
+  border-color: rgb(25, 171, 255) !important;
+  box-shadow: -1px 1px 5px white;
+}
+
+
+/********** Node Children *******************/
+
+
+
+.title-tag {
+
+
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing:auto;
+  font-weight: 600;
+  font-style: normal;
+  letter-spacing: 1px;
+  color: white;
+  font-size: 1.5em;
+  margin-bottom: 5%;
+}
+
+.input-group>.input-group-prepend>span {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  
+  background-color: rgba(0, 0, 0, 0.34);
+  color: white;
+  
+}
+
+.type-setter {
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0);
+  color: #feffff;
+}
+
+.textbox {
+  word-wrap: break-word;
+  width: 60%;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  resize: none;
+  overflow: hidden;
+
+}
+
+/* Specific Node Styling *********/
+
+.iso{
+  background-color: rgba(213, 216, 229, 0.466);
+}
+
+.begin {
+  background-color: rgba(81, 193, 253, 0.486);
+}
+
+.Text {
+  background-color: rgba(197, 124, 247, 0.674);
+}
+
+.intermediate {
+  background-color: rgba(2, 247, 255, 0.763);
+}
+
+.end {
+  background-color: rgba(135, 2, 230, 0.427);
+}
+
+
+
+/************ Tool bar *****************/
+
+.toolbar {
+  width: 110vw;
+  box-sizing: content-box;
+  
+  justify-content: center;
+  gap: 2%;
+  border: 2px rgb(255, 255, 255);
+  padding: 0.5%;
+
+}
+
+.dragnode {
+  cursor: grab;
+  color: white;
+  margin: 0.5%;
+  padding: 2.3%;
+  font-weight: bold;
+  font-size: 1em;
+  min-width: 80px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  box-shadow: 1px 1px 2px white;
+  background-color: #063fa9;
+  justify-content: center;
+  flex-direction: column;
+  transition: scale 200ms, background-color 200ms, color 200ms;
+  
+}
+
+.dragnode:hover {
+  box-shadow: 0 0 10px #ece49c;
+  color: rgba(12, 26, 146, 0.934);
+  scale: 1.1;
+  background-color: rgb(248, 246, 118);
+  
+
+
+}
+
+
+
+/******* Response Alert Styling ********************************/
+
+.alertt {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  z-index: 2;
+  display: flex;
+  background-color: rgba(18, 21, 34, 0.205);
+  backdrop-filter: blur(2px);
+  bottom: 0px;
+  justify-content: center;
+}
+
+.card {
+  justify-content: center;
+  width: 18rem;
+  height: fit-content;
+  position: relative;
+  top: 30%;
+  border-radius: 20% 0%;
+  background-color: #85acf4;
+  border: 4px double rgba(0, 255, 255, 0.331) ;
+  box-shadow: 0 0 10px #9ecaed;
+}
